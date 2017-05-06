@@ -1,0 +1,92 @@
+# IMAP & Sendmail settings
+set imap_user = "<USERNAME>@gmail.com"
+set imap_pass = "<PASSWORD>"
+set folder = "imaps://imap.gmail.com/"  # Root IMAP folder.
+set spoolfile = "+INBOX"
+set record = "+[Gmail]/Sent Mail"
+set postponed = "+[Gmail]/Drafts"
+set sendmail = "/usr/bin/esmtp"
+set sendmail_wait = 0                   # Wait for sendmail to finish.
+set mail_check = 300                    # Check for new mail every 5 mins.
+
+# List of mail folders to display / track.
+mailboxes +INBOX \
+          "+[Gmail]/All Mail" \
+          "+[Gmail]/Sent Mail" \
+          "+[Gmail]/Drafts" \
+          "+[Gmail]/Spam" \
+          "+[Gmail]/Trash"
+
+# Compose settings
+unset record                            # Gmail records sent messages automatically.
+set header_cache = "~/.cache/mutt"      # Cache message headers for performance.
+set message_cachedir = "~/.cache/mutt"  # Cache message contents for performance.
+set editor = "vim -c 'set spell spelllang=en,el'"
+set realname = "<NAME>"
+set from = "<EMAIL_ADDRESS>"
+set envelope_from                       # Include from address on the envelope.
+set use_from                            # Include from address in message header.
+set send_charset = "utf-8"
+set edit_headers                        # Enable editting message headers.
+set include                             # Include copy of message upon reply.
+set reply_to                            # Use the Reply-To address when replying.
+set fcc_attach                          # Save attachments along with message body.
+set fast_reply
+unset user_agent                        # Do not send user agent for security purposes.
+
+# Sidebar settings
+set sidebar_visible
+set sidebar_delim = ' │'
+set sidebar_width = 30
+
+# Index & Pager settings
+set sort = threads                      # Sort messages by thread, newest on top.
+set sort_aux = reverse-last-date-received
+set pager_index_lines = 15 
+set pager_context = 5
+set pager_stop                          # Do not move to next message automatically.
+set menu_scroll                         # Scrollable display of messages, not pages.
+set timeout = 300                       # Time out and check for new mail after 5 min.
+set tilde                               # Pad blank lines with tilde.
+unset markers                           # Do not display a marker on wrapped lines.
+set date_format = "%d/%m/%y %T %Z"
+set index_format = "%4C  [%Z]  %D  %-25.25F  (%4c)  %s"
+set status_format = "───[ Folder: %f ]───[%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]───%>─%?p?( %p postponed )?───"
+alternative_order text/plain text/enriched text/html
+auto_view text/html                     # Enable viewing of HTML content in emails.
+set mailcap_path = "~/.mailcap"
+
+# Key bindings
+bind compose p postpone-message
+bind index p recall-message
+bind index,pager z sidebar-next
+bind index,pager a sidebar-prev
+bind index,pager x sidebar-open
+bind index gg first-entry
+bind index G last-entry
+bind index R group-reply
+bind index <tab> sync-mailbox
+bind pager <tab> sync-mailbox
+bind index <space> collapse-thread
+bind index N search-opposite
+bind pager N search-opposite
+bind index <Up> previous-entry
+bind pager <Up> previous-entry
+bind index <Down> next-entry
+bind pager <Down> next-entry
+
+# Color theme
+color normal white color233
+color indicator color233 brightyellow
+color hdrdefault yellow color233
+color attachment brightred color233
+color status yellow color233
+color tilde white color233
+color tree red color233
+color sidebar_new yellow color233
+color signature brightcyan color233
+color quoted color245 color233
+color body blue color233 [\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+
+color body blue color233 (https?|ftp)://[\-\.,/%~_:?&=\#a-zA-Z0-9]+
+color markers brightred color233
+
