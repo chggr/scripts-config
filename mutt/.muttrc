@@ -5,6 +5,7 @@ set folder = "imaps://imap.gmail.com/"  # Root IMAP folder.
 set spoolfile = "+INBOX"
 set record = "+[Gmail]/Sent Mail"
 set postponed = "+[Gmail]/Drafts"
+set trash = "+[Gmail]/Trash"
 set sendmail = "/usr/bin/esmtp"
 set sendmail_wait = 0                   # Wait for sendmail to finish.
 set mail_check = 300                    # Check for new mail every 5 mins.
