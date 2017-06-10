@@ -1,4 +1,5 @@
-# scripts-config
+scripts-config
+--------------
 This repository contains various scripts and configuration files. Please see a
 brief description of each directory in this repository below.
 
@@ -9,4 +10,10 @@ should also work without issues for later versions of Mutt as well. In order to
 use it just place the files in your home directory, making sure that you insert
 your Gmail username and password in the placeholders provided. The color theme
 can easily be changed to suit your style and preferences.
+
+## photography
+Contains various scripts that make handling images so much easier (resizing,
+renaming, archiving, etc). Modern cameras are capable of producing photographs
+multiple MBs in size, so it is vital to have some useful scripts at hand to
+handle this volume of data painlessly.
 
