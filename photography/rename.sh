@@ -11,18 +11,14 @@
 
 counter=1
 
-for jpgFile in $(ls *.JPG *.jpg)
-do
-  # Extract filename.
-  jpgFileName=${jpgFile%.*}
+for jpg_file in $(ls *.JPG *.jpg); do
 
-  # Rename all files using the counter.
-  for file in $(ls $jpgFileName.*)
-  do
+  jpg_filename=${jpg_file%.*}
+
+  for file in $(ls $jpg_filename.*); do
     mv $file `printf "%05d" $counter`.${file#*.}
   done
 
-  # Increment the counter.
   let "counter += 1"
 done
 

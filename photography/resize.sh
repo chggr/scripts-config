@@ -9,10 +9,7 @@
 # that are difficult to share with other people across the web. This script
 # makes resizing and sharing photographs much easier.
 
-jpgFiles=$(ls *.JPG *.jpg)
-
-for file in $jpgFiles
-do
-  convert $file -resize 50% $file
+for jpg_file in $(ls *.JPG *.jpg); do
+  convert $jpg_file -resize 50% $jpg_file
 done
 

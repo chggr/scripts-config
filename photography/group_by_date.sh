@@ -11,15 +11,15 @@
 
 for jpg_file in $(ls *.JPG *.jpg); do
 
-    date_taken="$(identify -verbose $jpg_file | grep DateTimeOriginal |\
-         awk '{print $2 }' | sed 's/://g')"
-    year_taken="${date_taken:0:4}"
-    directory=$year_taken
+  date_taken="$(identify -verbose $jpg_file | grep DateTimeOriginal |\
+    awk '{print $2 }' | sed 's/://g')"
+  year_taken="${date_taken:0:4}"
+  directory=$year_taken
 
-    if [ ! -z "$directory" ]; then
-        if [ ! -d "$directory" ]; then
-            mkdir -pv "$directory"
-        fi
-        mv -v $jpg_file $directory
+  if [ ! -z "$directory" ]; then
+    if [ ! -d "$directory" ]; then
+      mkdir -pv "$directory"
     fi
+    mv -v $jpg_file $directory
+  fi
 done
