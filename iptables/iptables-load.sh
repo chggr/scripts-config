@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# This file calls iptables-restore to restore a dump of firewall rules into
+# This script calls iptables-restore to restore a dump of firewall rules into
 # iptables. It is normally placed under /etc/network/if-pre-up.d so that it is
 # executed automatically right after boot but before the network interfaces are
 # brought up.
