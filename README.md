@@ -3,6 +3,11 @@ scripts-config
 This repository contains various scripts and configuration files. Please see a
 brief description of each directory in this repository below.
 
+## iptables
+Contains rules and scripts for iptables, the Linux Kernel Firewall. These rules
+can be loaded on any Linux host to selectively block or allow incoming and
+outgoing TCP/UDP/ICMP network traffic.
+
 ## mutt
 Contains configuration files for Mutt, a text-based email client for Linux. The
 configuration has been tested and works fine for Mutt 1.5.24 and Gmail, but
