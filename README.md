@@ -8,6 +8,9 @@ Contains rules and scripts for iptables, the Linux Kernel Firewall. These rules
 can be loaded on any Linux host to selectively block or allow incoming and
 outgoing TCP/UDP/ICMP network traffic.
 
+## linux-kernel
+Contains scripts for compiling, testing and debugging the Linux kernel.
+
 ## mutt
 Contains configuration files for Mutt, a text-based email client for Linux. The
 configuration has been tested and works fine for Mutt 1.5.24 and Gmail, but
