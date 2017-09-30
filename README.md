@@ -31,6 +31,10 @@ renaming, archiving, etc). Modern cameras are capable of producing photographs
 multiple MBs in size, so it is vital to have some useful scripts at hand to
 handle this volume of data painlessly.
 
+## ping
+Contains scripts that ping remote hosts or DNS servers periodically to gather
+statistics about ISP service interruptions and overall service quality.
+
 ## vim
 Contains configuration for the vim text editor.
 
