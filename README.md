@@ -3,6 +3,9 @@ scripts-config
 This repository contains various scripts and configuration files. Please see a
 brief description of each directory in this repository below.
 
+## aws
+Contains scripts used to interact with various AWS services.
+
 ## iptables
 Contains rules and scripts for iptables, the Linux Kernel Firewall. These rules
 can be loaded on any Linux host to selectively block or allow incoming and
