@@ -28,6 +28,9 @@ renaming, archiving, etc). Modern cameras are capable of producing photographs
 multiple MBs in size, so it is vital to have some useful scripts at hand to
 handle this volume of data painlessly.
 
+## vim
+Contains configuration for the vim text editor.
+
 ## vpn
 Contains scripts to connect to a VPN service using OpenVPN.
 
