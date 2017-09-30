@@ -1,0 +1,56 @@
+[user]
+    name = NAME
+    email = EMAIL
+
+[sendemail]
+    smtpserver = /usr/bin/esmtp
+
+[color]
+    ui = auto
+
+[alias]
+    st = status --short --branch
+    co = checkout
+    cm = commit
+    cma = commit --all -m
+    qm = "!git checkout $1;git merge @{-1}"
+    lg = log --pretty='%C(red)%h%Creset |%C(yellow)%d%Creset %s %C(green)(%cr)%Creset %C(cyan)[%an]%Creset' --graph
+    dw = diff --word-diff
+    df = diff
+    dh = diff HEAD
+    dc = diff --cached
+    unstage = reset HEAD
+    sl = stash list
+    sp = stash pop
+    sw = stash save --keep-index --include-untracked "Stashed working directory"
+    who = shortlog -sne
+
+[core]
+    pager = less -RFX
+
+[diff]
+    algorithm = patience
+    mnemonicPrefix = true
+    renames = true
+
+[log]
+    abbrevCommit = true
+
+[merge]
+    conflictStyle = diff3
+
+[mergetool]
+    keepBackup = false
+    keepTemporaries = false
+
+[push]
+    default = upstream
+    followTags = true
+
+[status]
+    submoduleSummary = true
+    showUntrackedFiles = all
+
+[tag]
+    sort = version:refname
+

@@ -6,6 +6,9 @@ brief description of each directory in this repository below.
 ## aws
 Contains scripts used to interact with various AWS services.
 
+## git
+Contains git configuration files.
+
 ## iptables
 Contains rules and scripts for iptables, the Linux Kernel Firewall. These rules
 can be loaded on any Linux host to selectively block or allow incoming and
