@@ -14,7 +14,7 @@ VAULT=$1
 JOB_ID=$2
 
 aws glacier get-job-output --account-id - --vault-name "$VAULT" \
-                           --job-id "$JOB_ID" job_output.json
+                           --job-id "$JOB_ID" job_output
 
 exit 0
 
