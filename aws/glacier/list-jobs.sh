@@ -4,7 +4,7 @@
 # given vault. It returns information such as job type, submission time and
 # current status.
 
-if [ "$#" -ne 2 ]
+if [ "$#" -ne 1 ]
 then
     echo "Usage $0 <VAULT>"
     exit 1
