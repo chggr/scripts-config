@@ -26,6 +26,7 @@ set softtabstop=4
 
 " Always show line numbers and highlight cursor line.
 set number
+set relativenumber
 set cursorline
 
 " Visual autocomplete for command menu.
