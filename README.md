@@ -41,6 +41,9 @@ statistics about ISP service interruptions and overall service quality.
 ## ranger
 Contains configuration for ranger, the text based file manager.
 
+## tmux
+Contains configuration for the terminal multiplexer, tmux.
+
 ## vim
 Contains configuration for the vim text editor.
 
