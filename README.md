@@ -6,6 +6,9 @@ brief description of each directory in this repository below.
 ## aws
 Contains scripts used to interact with various AWS services.
 
+## cdrip
+Contains scripts to extract tracks from an audio CD and compress them to MP3.
+
 ## cmus
 Contains configuration for cmus, a console audio player.
 
