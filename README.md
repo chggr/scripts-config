@@ -35,6 +35,9 @@ handle this volume of data painlessly.
 Contains scripts that ping remote hosts or DNS servers periodically to gather
 statistics about ISP service interruptions and overall service quality.
 
+## ranger
+Contains configuration for ranger, the text based file manager.
+
 ## vim
 Contains configuration for the vim text editor.
 
