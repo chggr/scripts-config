@@ -6,7 +6,7 @@
 # the CD surface will be skipped. The conversion to mp3 is done using variable
 # bit rate with best possible quality (average around 240 kbs).
 
-cdparanoia -B -l -X
+cdparanoia -B -l -X -S 12
 
 for wav_file in $(ls *.wav); do
   lame -q 0 -v -V 0 $wav_file ${wav_file%.*}.mp3
