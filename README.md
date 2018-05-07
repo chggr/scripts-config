@@ -20,6 +20,11 @@ Contains rules and scripts for iptables, the Linux Kernel Firewall. These rules
 can be loaded on any Linux host to selectively block or allow incoming and
 outgoing TCP/UDP/ICMP network traffic.
 
+## irssi
+Contains configuration for irssi, a command line IRC client. The commands in the
+config file should be executed once within irssi and then the setup can be saved
+in the user's home directory using the /save command.
+
 ## linux-kernel
 Contains scripts for compiling, testing and debugging the Linux kernel.
 
