@@ -16,7 +16,7 @@ for jpg_file in $(ls *.JPG *.jpg *.JPEG *.jpeg); do
   jpg_filename=${jpg_file%.*}
 
   for file in $(ls $jpg_filename.*); do
-    mv $file `printf "%05d" $counter`.${file#*.}
+    mv -i $file `printf "%05d" $counter`.${file#*.}
   done
 
   let "counter += 1"
