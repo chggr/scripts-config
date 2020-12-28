@@ -11,7 +11,7 @@
 
 counter=1
 
-for jpg_file in $(ls *.JPG *.jpg); do
+for jpg_file in $(ls *.JPG *.jpg *.JPEG *.jpeg); do
 
   jpg_filename=${jpg_file%.*}
 
